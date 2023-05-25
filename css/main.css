@@ -71,8 +71,30 @@ header {
 }
 
 
+/* Estilos básicos del navbar */
 .navbar {
-  height: 70px; /* adjust as needed */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    
+    min-height: 30px; /* Ajusta la altura mínima según tus necesidades */
+    padding: 8px 16px; /* Ajusta el padding superior e inferior y el padding izquierdo y derecho según tus necesidades */
+  }
+}
+
+
+/* Estilos para la versión de escritorio */
+@media (min-width: 601px) {
+  .navbar {
+    background-color: #333;
+    height: 70px;
+  }
 }
 
 #hero {
@@ -713,8 +735,8 @@ section:nth-of-type(3) {
 }
 
 .checkout-cart {
-  width: 90%;
-  height: 90vh;
+  width: 80%;
+  height: 50vh;
   background-color: var(--main-background-right-color);
   padding: 2em;
   border-radius: 10px;
